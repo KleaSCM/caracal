@@ -1,0 +1,247 @@
+{
+  "JavaScript": {
+    "console.log": {
+      "description": "Prints output to the console.",
+      "example": "console.log('Hello, World!');"
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "for (let i = 0; i < 5; i++) {\n  console.log(i);\n}"
+    },
+    "array methods": {
+      "description": "Common methods for manipulating arrays.",
+      "example": "let arr = [1, 2, 3];\narr.push(4); // [1, 2, 3, 4]\narr.pop(); // [1, 2, 3]"
+    }
+  },
+  "TypeScript": {
+    "type": {
+      "description": "Defines a custom type.",
+      "example": "type Point = { x: number; y: number };"
+    },
+    "interface": {
+      "description": "Defines a contract for classes or objects.",
+      "example": "interface User {\n  name: string;\n  age: number;\n}"
+    },
+    "generics": {
+      "description": "Creates reusable components.",
+      "example": "function identity<T>(arg: T): T {\n  return arg;\n}"
+    }
+  },
+  "Python": {
+    "print": {
+      "description": "Prints output to the console.",
+      "example": "print('Hello, World!')"
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "for i in range(5):\n  print(i)"
+    },
+    "list comprehension": {
+      "description": "Creates a new list by applying an expression to each element.",
+      "example": "[x**2 for x in range(10)]"
+    }
+  },
+  "C++": {
+    "std::cout": {
+      "description": "Prints output to the console.",
+      "example": "#include <iostream>\n\nint main() {\n  std::cout << \"Hello, World!\" << std::endl;\n  return 0;\n}"
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "for (int i = 0; i < 5; ++i) {\n  std::cout << i << std::endl;\n}"
+    },
+    "class": {
+      "description": "Defines a class.",
+      "example": "class MyClass {\npublic:\n  MyClass(int val) : value(val) {}\n  int getValue() const { return value; }\nprivate:\n  int value;\n};"
+    }
+  },
+  "C#": {
+    "Console.WriteLine": {
+      "description": "Prints output to the console.",
+      "example": "using System;\n\nclass Program {\n  static void Main() {\n    Console.WriteLine(\"Hello, World!\");\n  }\n}"
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "for (int i = 0; i < 5; i++) {\n  Console.WriteLine(i);\n}"
+    },
+    "class": {
+      "description": "Defines a class.",
+      "example": "public class MyClass {\n  public int Value { get; set; }\n  public MyClass(int val) {\n    Value = val;\n  }\n}"
+    }
+  },
+  "Lua": {
+    "print": {
+      "description": "Prints output to the console.",
+      "example": "print('Hello, World!')"
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "for i = 1, 5 do\n  print(i)\nend"
+    },
+    "table": {
+      "description": "Defines a table (similar to arrays or dictionaries).",
+      "example": "t = { key1 = 'value1', key2 = 'value2' }\nprint(t.key1)"
+    }
+  },
+  "HTML": {
+    "basic structure": {
+      "description": "The basic structure of an HTML document.",
+      "example": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Title of the document</title>\n</head>\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph.</p>\n</body>\n</html>"
+    },
+    "link": {
+      "description": "Creates a hyperlink.",
+      "example": "<a href=\"https://www.example.com\">This is a link</a>"
+    },
+    "image": {
+      "description": "Embeds an image.",
+      "example": "<img src=\"image.jpg\" alt=\"An image\">"
+    }
+  },
+  "CSS": {
+    "basic structure": {
+      "description": "The basic structure of a CSS rule.",
+      "example": "selector {\n  property: value;\n}"
+    },
+    "class selector": {
+      "description": "Selects elements with a specific class attribute.",
+      "example": ".className {\n  color: blue;\n}"
+    },
+    "id selector": {
+      "description": "Selects an element with a specific id attribute.",
+      "example": "#idName {\n  color: red;\n}"
+    }
+  },
+  "SASS": {
+    "nesting": {
+      "description": "Allows nesting of CSS selectors.",
+      "example": "nav {\n  ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n  }\n  li { display: inline-block; }\n  a {\n    display: block;\n    padding: 6px 12px;\n    text-decoration: none;\n  }\n}"
+    },
+    "variables": {
+      "description": "Defines reusable values.",
+      "example": "$primary-color: #333;\nbody {\n  color: $primary-color;\n}"
+    },
+    "mixins": {
+      "description": "Defines reusable blocks of CSS.",
+      "example": "@mixin border-radius($radius) {\n  -webkit-border-radius: $radius;\n     -moz-border-radius: $radius;\n      -ms-border-radius: $radius;\n          border-radius: $radius;\n}\n\n.box { @include border-radius(10px); }"
+    }
+  },
+  "JSON": {
+    "basic structure": {
+      "description": "JavaScript Object Notation (JSON) is a lightweight data-interchange format.",
+      "example": "{\n  \"key\": \"value\",\n  \"array\": [1, 2, 3],\n  \"object\": {\n    \"key\": \"value\"\n  }\n}"
+    },
+    "array": {
+      "description": "Defines an array in JSON.",
+      "example": "[\"value1\", \"value2\", \"value3\"]"
+    },
+    "object": {
+      "description": "Defines an object in JSON.",
+      "example": "{\n  \"key1\": \"value1\",\n  \"key2\": \"value2\"\n}"
+    }
+  },
+  "Ruby": {
+    "puts": {
+      "description": "Prints output to the console.",
+      "example": "puts 'Hello, World!'"
+    },
+    "each": {
+      "description": "Iterates over each element of a collection.",
+      "example": "[1, 2, 3].each do |n|\n  puts n\nend"
+    },
+    "class": {
+      "description": "Defines a class.",
+      "example": "class MyClass\n  def initialize(value)\n    @value = value\n  end\n  def get_value\n    @value\n  end\nend"
+    }
+  },
+  "Rust": {
+    "println!": {
+      "description": "Prints output to the console.",
+      "example": "fn main() {\n  println!(\"Hello, World!\");\n}"
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "fn main() {\n  for i in 0..5 {\n    println!(\"{}\", i);\n  }\n}"
+    },
+    "struct": {
+      "description": "Defines a structure.",
+      "example": "struct MyStruct {\n  value: i32,\n}\n\nfn main() {\n  let s = MyStruct { value: 10 };\n  println!(\"{}\", s.value);\n}"
+    }
+  },
+  "C": {
+    "printf": {
+      "description": "Prints output to the console.",
+      "example": "#include <stdio.h>\n\nint main() {\n  printf(\"Hello, World!\\n\");\n  return 0;\n}"
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "#include <stdio.h>\n\nint main() {\n  for (int i = 0; i < 5; ++i) {\n    printf(\"%d\\n\", i);\n  }\n  return 0;\n}"
+    },
+    "struct": {
+      "description": "Defines a structure.",
+      "example": "struct MyStruct {\n  int value;\n};\n\nint main() {\n  struct MyStruct s;\n  s.value = 10;\n  printf(\"%d\\n\", s.value);\n  return 0;\n}"
+    }
+  },
+  "F#": {
+    "printfn": {
+      "description": "Prints output to the console.",
+      "example": "printfn \"Hello, World!\""
+    },
+    "for loop": {
+      "description": "Loops through a block of code a number of times.",
+      "example": "for i in 0 .. 4 do\n  printfn \"%d\" i"
+    },
+    "record": {
+      "description": "Defines a record type.",
+      "example": "type MyRecord = { Name: string; Age: int }\nlet person = { Name = \"John\"; Age = 30 }"
+    }
+  },
+  "OCaml": {
+    "print_endline": {
+      "description": "Prints a line of text to the console.",
+      "example": "print_endline \"Hello, World!\""
+    },
+    "function": {
+      "description": "Defines and uses a function.",
+      "example": "let add a b = a + b\n\nlet () = print_endline (string_of_int (add 3 5))"
+    },
+    "list": {
+      "description": "Creates and iterates over a list.",
+      "example": "let numbers = [1; 2; 3; 4; 5]\n\nlet () = List.iter (fun x -> print_endline (string_of_int x)) numbers"
+    },
+    "pattern matching": {
+      "description": "Pattern matching on a list.",
+      "example": "let describe_list lst =\n  match lst with\n  | [] -> \"The list is empty.\"\n  | [x] -> \"The list has one element: \" ^ string_of_int x\n  | x :: y :: _ -> \"The list has at least two elements: \" ^ string_of_int x ^ \" and \" ^ string_of_int y\n\nlet () = print_endline (describe_list [1; 2; 3])"
+    },
+    "record": {
+      "description": "Defines and uses a record.",
+      "example": "type person = { name : string; age : int }\n\nlet john = { name = \"John\"; age = 30 }\n\nlet () = print_endline (john.name ^ \" is \" ^ string_of_int john.age ^ \" years old.\")"
+    },
+    "tuple": {
+      "description": "Creates and uses a tuple.",
+      "example": "let person = (\"John\", 30)\n\nlet () = match person with\n  | (name, age) -> print_endline (name ^ \" is \" ^ string_of_int age ^ \" years old.\")"
+    },
+    "for loop": {
+      "description": "For loop to print numbers from 0 to 4.",
+      "example": "for i = 0 to 4 do\n  print_endline (string_of_int i)\ndone"
+    },
+    "describe_list": {
+      "description": "A function to describe the contents of a list using pattern matching.",
+      "example": "let describe_list lst =\n  match lst with\n  | [] -> \"The list is empty.\"\n  | [x] -> \"The list has one element: \" ^ string_of_int x\n  | x :: y :: _ -> \"The list has at least two elements: \" ^ string_of_int x ^ \" and \" ^ string_of_int y\n\nlet () = print_endline (describe_list [1; 2; 3])"
+    }
+  },
+  "Haskell": {
+    "putStrLn": {
+      "description": "Prints output to the console.",
+      "example": "main = putStrLn \"Hello, World!\""
+    },
+    "for loop (using mapM_)": {
+      "description": "Loops through a block of code a number of times using mapM_.",
+      "example": "import Control.Monad (mapM_)\nmain = mapM_ (\\i -> print i) [0..4]"
+    },
+    "data type": {
+      "description": "Defines a data type.",
+      "example": "data Person = Person { name :: String, age :: Int }\nlet john = Person { name = \"John\", age = 30 }"
+    }
+  }
+}
+

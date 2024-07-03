@@ -147,7 +147,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         hRichTextBox = CreateWindowW(
             L"EDIT",
             L"",
-            WS_CHILD | WS_VISIBLE | WS_BORDER | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL,
+            WS_CHILD | WS_VISIBLE | WS_BORDER | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY,
             10, 50, 760, 500,
             hWnd,
             NULL,
@@ -184,10 +184,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             std::wstring wresult(result.begin(), result.end());
 
             // Display the command and result in the RichTextBox
+            AppendTextToRichTextBox(hRichTextBox, L"Command Entered:\r\n");
             AppendTextToRichTextBox(hRichTextBox, buffer);
-            AppendTextToRichTextBox(hRichTextBox, L"\r\n");
+            AppendTextToRichTextBox(hRichTextBox, L"\r\n\nResult:\r\n");
             AppendTextToRichTextBox(hRichTextBox, wresult.c_str());
-            AppendTextToRichTextBox(hRichTextBox, L"\r\n");
+            AppendTextToRichTextBox(hRichTextBox, L"\r\n\n");
 
             // Add the command to the history ListBox
             SendMessage(hHistoryListBox, LB_ADDSTRING, 0, (LPARAM)buffer);
